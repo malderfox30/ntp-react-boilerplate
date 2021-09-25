@@ -1,4 +1,4 @@
-import logo from '../logo.svg';
+/* eslint-disable react/jsx-filename-extension */
 import './App.css';
 
 function App() {

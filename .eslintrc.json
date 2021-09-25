@@ -17,7 +17,7 @@
     "node": true
   },
   "parserOptions": {
-    "ecmaVersion": 2018,
+    "ecmaVersion": 2020,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
@@ -30,13 +30,17 @@
   },
   "plugins": [],
   "rules":{
-    "import/no-extraneous-dependencies": [
-      "off", {
-         "devDependencies": false, 
-         "optionalDependencies": false, 
-         "peerDependencies": false
-      }
+    "import/order": [
+      "error",
+      { "groups": ["builtin", "external", "parent", "sibling", "index"] }
     ],
-    "linebreak-style": 0
+    "no-console": "warn",
+    "import/no-unresolved": "off",
+    "explicit-module-boundary-types": "off",
+    "no-empty-function": "off",
+    "react/display-name": "off",
+    "react/react-in-jsx-scope": "off",
+    "max-lines": ["error", 300],
+    "no-unused-vars": "error"
   }
 }
