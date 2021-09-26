@@ -21,7 +21,8 @@
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
-    }
+    },
+    "project": ["./jsconfig.json"]
   },
   "settings": {
     "react": {
@@ -29,6 +30,7 @@
     }
   },
   "plugins": [],
+  "ignorePatterns": ["*.js", "node_modules"], 
   "rules":{
     "import/order": [
       "error",

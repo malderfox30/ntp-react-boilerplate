@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "#/shared/*": ["src/shared/*"],
+      "#/pages/*": ["src/pages/*"],
+      "#/configs/*": ["src/configs/*"],
+      "#/routers/*": ["src/routers/*"],
+      "#/assets/*": ["src/assets/*"],
+      "#/src/*": ["./src/*"]
+    }
+  },
+  "include": ["./src"],
+  "exclude": ["node_modules"]
+}
